@@ -1,5 +1,11 @@
 <?php
 var_dump($_GET);
+
+if (str_contains($_GET['email'], "@") && str_contains($_GET['email'], ".")) {
+    echo "email ok";
+} else {
+    echo "email scorretta";
+}
 ?>
 
 <!DOCTYPE html>
@@ -20,11 +26,11 @@ var_dump($_GET);
 
     <main class="site-main">
 
-    <form action="" method="get">
-        <label for="email">Inserisci Email</label>
-        <input type="text" name="email" id="email">
-        <button type="submit">Invia</button>
-    </form>
+        <form action="" method="get">
+            <label for="email">Inserisci Email</label>
+            <input type="text" name="email" id="email">
+            <button type="submit">Invia</button>
+        </form>
 
     </main>
     <!-- /.site-main -->
