@@ -3,13 +3,13 @@ var_dump($_GET);
 
 $email = $_GET['email'];
 
-echo $email;
-
-if (str_contains($email, "@") && str_contains($email, ".")) {
-    echo "email ok";
-} else {
-    echo "email scorretta";
-}
+function checkEmail($email)
+{
+    if (str_contains($email, "@") && str_contains($email, ".")) {
+        return true;
+    }
+    return false;
+};
 ?>
 
 <!DOCTYPE html>
