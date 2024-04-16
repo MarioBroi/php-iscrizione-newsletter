@@ -1,7 +1,11 @@
 <?php
 var_dump($_GET);
 
-if (str_contains($_GET['email'], "@") && str_contains($_GET['email'], ".")) {
+$email = $_GET['email'];
+
+echo $email;
+
+if (str_contains($email, "@") && str_contains($email, ".")) {
     echo "email ok";
 } else {
     echo "email scorretta";
