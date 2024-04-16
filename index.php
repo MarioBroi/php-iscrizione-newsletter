@@ -1,10 +1,14 @@
 <?php
 //var_dump($_GET);
 
+require_once __DIR__ . '/helpers/functions.php';
+
 $email = $_GET['email'];
 
 if (isset($email)) {
-    var_dump($email);
+    
+    //var_dump($email);
+
     $response = checkEmail($email);
     $message = generateAlert($response);
 }
@@ -12,18 +16,18 @@ if (isset($email)) {
 /**
  * Check if the email is typed correctly
  */
-function checkEmail($email)
+/* function checkEmail($email)
 {
     if (str_contains($email, "@") && str_contains($email, ".")) {
         return true;
     }
     return  false;
-};
+}; */
 
 /**
  * Generates alert message
  */
-function generateAlert($response)
+/* function generateAlert($response)
 {
     if ($response) {
         return [
@@ -35,7 +39,7 @@ function generateAlert($response)
         'status' => 'danger',
         'text' => 'Email errata'
     ];
-}
+} */
 ?>
 
 <!DOCTYPE html>
