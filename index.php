@@ -1,5 +1,5 @@
 <?php
-echo('test');
+var_dump($_GET);
 ?>
 
 <!DOCTYPE html>
@@ -12,6 +12,27 @@ echo('test');
 </head>
 
 <body>
+
+    <header class="site-header">
+
+    </header>
+    <!-- /.site-header -->
+
+    <main class="site-main">
+
+    <form action="" method="get">
+        <label for="email">Inserisci Email</label>
+        <input type="text" name="email" id="email">
+        <button type="submit">Invia</button>
+    </form>
+
+    </main>
+    <!-- /.site-main -->
+
+    <footer class="site-footer">
+
+    </footer>
+    <!-- /.sitefooter -->
 
 </body>
 
