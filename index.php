@@ -77,7 +77,7 @@ if (isset($email)) {
 
         <?php if (isset($message)) : ?>
 
-            <div class="alert alert-primary" role="alert">
+            <div class="alert alert-<?= $message['status']; ?>" role="alert">
                 <strong><?= $message['text']; ?></strong>
             </div>
 
