@@ -6,7 +6,7 @@ Andante per gradi  e seguite con ordine le milestone di seguito:
 
 - [x] Milestone 2: verificato il corretto funzionamento del nostro codice, spostiamo la logica in un file functions.php che includeremo poi nella pagina principale.
 
-- Aggiungere anche un po’ di stile alla pagina tramite Bootstrap.
+- [x] Aggiungere anche un po’ di stile alla pagina tramite Bootstrap.
 
 ## Bonus
 - Milestone 3: invece di usare una classe statica per lo stile dell’alert, modificarla in base all’esito della funzione. Usare alert-danger in caso di errore e alert-success in caso di esito positivo.

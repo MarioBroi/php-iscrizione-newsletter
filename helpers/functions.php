@@ -19,11 +19,11 @@ function generateAlert($response)
     if ($response) {
         return [
             'status' => 'success',
-            'text' => 'Ti sei iscritto'
+            'text' => 'Congratulazioni! Ti sei iscritto'
         ];
     }
     return  [
         'status' => 'danger',
-        'text' => 'Email errata'
+        'text' => 'Attenzione! Email errata'
     ];
 }
