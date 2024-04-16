@@ -1,22 +1,41 @@
 <?php
-var_dump($_GET);
+//var_dump($_GET);
 
 $email = $_GET['email'];
-$message = checkEmail($email);
 
-function checkEmail($mail)
+if (isset($email)) {
+    var_dump($email);
+    $response = checkEmail($email);
+    $message = generateAlert($response);
+}
+
+/**
+ * Check if the email is typed correctly
+ */
+function checkEmail($email)
 {
-    if (str_contains($mail, "@") && str_contains($mail, ".")) {
+    if (str_contains($email, "@") && str_contains($email, ".")) {
+        return true;
+    }
+    return  false;
+};
+
+/**
+ * Generates alert message
+ */
+function generateAlert($response)
+{
+    if ($response) {
         return [
-            'succes' => true,
+            'status' => 'success',
             'text' => 'Ti sei iscritto'
         ];
     }
     return  [
-        'succes' => false,
+        'status' => 'danger',
         'text' => 'Email errata'
     ];
-};
+}
 ?>
 
 <!DOCTYPE html>
