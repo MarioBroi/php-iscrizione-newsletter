@@ -2,7 +2,7 @@
 Ciao Padawan! oggi pomeriggio ricalcate quanto visto in classe stamattina nel live.
 Andante per gradi  e seguite con ordine le milestone di seguito:
 
-- Milestone 1: scriviamo tutto (logica e layout) in un unico file index.php
+- [x] Milestone 1: scriviamo tutto (logica e layout) in un unico file index.php
 
 - Milestone 2: verificato il corretto funzionamento del nostro codice, spostiamo la logica in un file functions.php che includeremo poi nella pagina principale
 
